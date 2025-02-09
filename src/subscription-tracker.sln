@@ -3,8 +3,52 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.12.35707.178 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingBlocks", "{C5BAA347-7EA9-43B8-AFBD-E0DE3F544B01}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{37FC7A79-A431-4FA1-84B0-350E144C2F93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildingBlocks", "BuildingBlocks\BuildingBlocks\BuildingBlocks.csproj", "{58C38F20-504B-4ED6-BDB4-FD53A2AB3F96}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Subscription", "Subscription", "{E153698C-B248-4ACF-8925-0F21B568A310}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Subscription.API", "Services\Subscription\Subscription.API\Subscription.API.csproj", "{9F1C8084-E925-4284-91C9-2492561080FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Subscription.Domain", "Services\Subscription\Subscription.Domain\Subscription.Domain.csproj", "{4AD0DBFE-FD4E-40F6-84B4-242DD6FAF6F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Subscription.Application", "Services\Subscription\Subscription.Application\Subscription.Application.csproj", "{7709B5CE-4AFD-4A75-B20D-CEA8F7546CA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Subscription.Infrstructure", "Services\Subscription\Subscription.Infrstructure\Subscription.Infrstructure.csproj", "{BABCE389-1570-4A88-8B5D-7D73A26FE2B6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Billing", "Billing", "{02462A41-CC7F-49F9-A1C1-AA08FD51BA93}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notifications", "Notifications", "{4BB3AED1-05C1-48FE-BA16-F130B94B7782}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UsersManagement", "UsersManagement", "{0AA598BA-FCDF-47CF-9552-90B04F377C81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Billing.API", "Services\Billing\Billing.API\Billing.API.csproj", "{E5EE653C-95B4-4050-ABC6-6BD8B7B87965}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notifications.API", "Services\Notifications\Notifications.API\Notifications.API.csproj", "{0E0D9F34-2CD3-4E6F-AC91-1CEA938A2F39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsersManagement.API", "Services\UsersManagement\UsersManagement.API\UsersManagement.API.csproj", "{9C421E80-A8F4-4EEB-BF68-F005C1DEABD2}"
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{58C38F20-504B-4ED6-BDB4-FD53A2AB3F96} = {C5BAA347-7EA9-43B8-AFBD-E0DE3F544B01}
+		{E153698C-B248-4ACF-8925-0F21B568A310} = {37FC7A79-A431-4FA1-84B0-350E144C2F93}
+		{9F1C8084-E925-4284-91C9-2492561080FD} = {E153698C-B248-4ACF-8925-0F21B568A310}
+		{4AD0DBFE-FD4E-40F6-84B4-242DD6FAF6F2} = {E153698C-B248-4ACF-8925-0F21B568A310}
+		{7709B5CE-4AFD-4A75-B20D-CEA8F7546CA0} = {E153698C-B248-4ACF-8925-0F21B568A310}
+		{BABCE389-1570-4A88-8B5D-7D73A26FE2B6} = {E153698C-B248-4ACF-8925-0F21B568A310}
+		{02462A41-CC7F-49F9-A1C1-AA08FD51BA93} = {37FC7A79-A431-4FA1-84B0-350E144C2F93}
+		{4BB3AED1-05C1-48FE-BA16-F130B94B7782} = {37FC7A79-A431-4FA1-84B0-350E144C2F93}
+		{0AA598BA-FCDF-47CF-9552-90B04F377C81} = {37FC7A79-A431-4FA1-84B0-350E144C2F93}
+		{E5EE653C-95B4-4050-ABC6-6BD8B7B87965} = {02462A41-CC7F-49F9-A1C1-AA08FD51BA93}
+		{0E0D9F34-2CD3-4E6F-AC91-1CEA938A2F39} = {4BB3AED1-05C1-48FE-BA16-F130B94B7782}
+		{9C421E80-A8F4-4EEB-BF68-F005C1DEABD2} = {0AA598BA-FCDF-47CF-9552-90B04F377C81}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 	EndGlobalSection
 EndGlobal
